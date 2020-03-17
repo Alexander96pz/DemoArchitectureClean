@@ -16,4 +16,11 @@ export class ServiceService {
     const path = `${this.Url}/`;
     return this.http.get<Persona[]>(path);
   }
+  createPersona(persona: Persona){
+    console.log(persona.id);
+    console.log(persona.name);
+    console.log(persona.apellidos);
+    const path = `${this.Url}/`;
+    return this.http.post<Persona>(this.Url, persona);
+  }
 }

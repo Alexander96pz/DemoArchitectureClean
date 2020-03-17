@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Marlon.backend;
+package com.Marlon.backend.Interfaces;
 
 import com.Marlon.backend.domain.entities.Persona;
 import java.util.List;
+import org.json.JSONObject;
 
 public interface PersonaService {
     List<Persona>listar();
-    Persona listar(int id);
-    Persona add(Persona p);
-    Persona edit(Persona p);
-    Persona delete(int id);
+    Persona add(JSONObject jsonObject);
+    //Persona edit(Persona p);
+    //Persona delete(int id);
+    Persona ObtenerPersona();
     
 }

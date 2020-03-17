@@ -13,11 +13,13 @@ public class Persona {
     int id;
     String name;
     String apellidos;
-
     public Persona(int id, String name, String apellidos) {
         this.id = id;
         this.name = name;
         this.apellidos = apellidos;
+    }
+
+    public Persona() {
     }
 
     public int getId() {
